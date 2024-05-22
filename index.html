@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Phần mềm quản lý phòng khám" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <title>Y chính xác</title>
+</head>
+
+<body>
+    <header class="header py-2 bg-white lg:bg-bg_primary shadow-sm lg:shadow-none">
+        <nav class=" container mx-auto border-gray-200 py-0 lg:py-2.5 dark:bg-gray-800">
+            <div class="flex flex-wrap justify-between items-center mx-auto">
+                <a href="/" class="flex items-center">
+                    <img src="./assets/images/logo.png" class="mr-3 h-9 lg:h-10" alt="EMR Logo" />
+                    <span class="self-center text-lg lg:text-xl text-primary font-semibold whitespace-nowrap">Y chính
+                        xác</span>
+                </a>
+                <div class="flex items-center lg:hidden lg:order-2">
+                    <button data-collapse-toggle="mobile-menu-2" type="button"
+                        class="inline-flex items-center p-1 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100"
+                        aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="will-change-transform animate-mmfadeIn hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+                    id="mobile-menu-2">
+                    <ul class="flex flex-col mt-2 font-medium lg:flex-row lg:space-x-8 lg:mt-0 lg:items-center">
+                        <li>
+                            <a href="#" class="nav-item">Sản phẩm</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-item">Đối tác</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-item">Dịch vụ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-item">Liên hệ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-item">Demo</a>
+                        </li>
+
+                        <li class="hidden lg:block">
+                            <img class="w-8 h-8 rounded-full translate-y-[-1px]" src="./assets/images/vi.png"
+                                alt="Tiếng việt">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home"
+        class="relative overflow-hidden py-10 sm:py-32 lg:min-h-[932px] lg:py-32 xl:py-28 2xl:py-36 bg-bg_primary">
+        <div class="container mx-auto relative mt-8 xl:mt-0 px-4">
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-6 items-center">
+                <div class="relative z-10 text-center md:text-left">
+                    <h1
+                        class="text-primary animate-mmslideIn font-[900] lg:leading-normal leading-normal text-4xl lg:text-[50px] mb-5">
+                        PHẦN MỀM
+                        <br /> QUẢN LÝ PHÒNG KHÁM
+                    </h1>
+                    <p class="text-brown text-sm animate-mmslideIn md:text-xl max-w-xl">Lorem
+                        ipsum, dolor
+                        sit amet consectetur adipisicing elit. Excepturi ipsa quos doloremque assumenda? Nostrum
+                        provident in, libero laudantium quod delectus nobis, adipisci accusamus quam, veniam nisi neque
+                        alias. Explicabo, doloribus.</p>
+                </div>
+
+                <div class="lg:ms-8">
+                    <div class="relative z-10">
+                        <img src="assets/images/banner.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden absolute top-[-100px] left-[-500px] md:block">
+                <img src="assets/images/banner-inner.svg" class="w-full animate-mmslideInLeft" alt="">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="product" class="relative mt-[80px] mb:0 px-[25px] overflow-hidden">
+        <div class="container mx-auto relative py-4 pt-12 md:pt-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-center">
+                <div class="section-heading text-center md:text-left">
+                    <h5
+                        class="relative z-10 text-3xl text-primary text-center md:text-left leading-[54px] mx-auto mb-10 font-bold ">
+                        SẢN PHẨM
+                        <br />
+                        CỦA CHÚNG TÔI
+                    </h5>
+
+                    <div class="text-[14px] leading-6">
+                        <p>
+                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                            pain was born and I will give , or avoids pleasure itself, because it.
+                        </p>
+                    </div>
+
+                    <div
+                        class="absolute top-0 left-[50%] translate-x-[-50%] md:left-[-40px] md:top-[80px] md:translate-x-0 lg:left-[-20px] xl:left-[20px]">
+                        <img src="./assets/images/dot.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="product animation-element relative">
+                    <div
+                        class="border border-solid border-borderColor rounded-[25px] transition-all hover:shadow-card-hover hover:border-white">
+                        <div class="text-center">
+                            <div class="product-header pt-[60px] pb-[35px]">
+                                <div class="icon mx-auto w-fit">
+                                    <img loading="lazy" src="./assets/images/emr.png" alt=""
+                                        class="h-[100px] w-[100px] lg:h-[120px] lg:w-[120px]">
+                                </div>
+                            </div>
+
+                            <div class="product-intro px-[25px] pb-[55px]">
+                                <h4 class="text-primary text-2xl mb-2 font-bold">
+                                    EMR
+                                </h4>
+
+                                <div class="text-[16px]">
+                                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                        praising pain was born and I will give you a complete.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product animation-delay-300 animation-element relative">
+                    <div
+                        class="border border-solid border-borderColor rounded-[25px] transition-all hover:shadow-card-hover hover:border-white">
+                        <div class="text-center">
+                            <div class="product-header pt-[60px] pb-[35px]">
+                                <div class="icon mx-auto w-fit">
+                                    <img loading="lazy" src="./assets/images/ehr.png" alt=""
+                                        class="h-[100px] w-[100px] lg:h-[120px] lg:w-[120px]">
+                                </div>
+                            </div>
+
+                            <div class="product-intro px-[25px] pb-[55px]">
+                                <h4 class="text-primary text-2xl mb-2 font-bold">
+                                    App EHR
+                                </h4>
+
+                                <div class="text-[16px]">
+                                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                        praising pain was born and I will give you a complete.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product animation-delay-600 animation-element relative">
+                    <div
+                        class="border border-solid border-borderColor rounded-[25px] transition-all  hover:shadow-card-hover hover:border-white">
+                        <div class="text-center">
+                            <div class="product-header pt-[60px] pb-[35px]">
+                                <div class="icon mx-auto w-fit">
+                                    <img loading="lazy" src="./assets/images/tele-medicine.png" alt=""
+                                        class="h-[100px] w-[100px] lg:h-[120px] lg:w-[120px]">
+                                </div>
+                            </div>
+
+                            <div class="product-intro px-[25px] pb-[55px]">
+                                <h4 class="text-primary text-2xl mb-2 font-bold">
+                                    Tele Medicine
+                                </h4>
+
+                                <div class="text-[16px]">
+                                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                        praising pain was born and I will give you a complete.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="product-content" class="overflow-hidden pt-[35px]">
+
+        <div id="EMR" class="relative mt-[35px]">
+            <div class="container mx-auto">
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-5 md:gap-[100px] items-center">
+                    <div class="relative p-[10px]">
+                        <div class="product-image animation-element">
+                            <img src="./assets/images/emr-intro.jpeg" alt="emr" loading="lazy"
+                                class="w-full rounded-[50px]">
+                        </div>
+
+                        <div class="absolute right-[-100px] bottom-[-100px] md:right-[-50px]">
+                            <img src="./assets/images/circle-dot.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="relative">
+                        <div class="mt-[50px] mx-[15px]">
+                            <div class="intro w-full text-center md:text-left">
+
+                                <div class="absolute left-[-50px] top-[-40px]">
+                                    <img src="./assets/images/dot.svg" alt="">
+                                </div>
+                                <div class="product-intro animation-element relative z-10">
+
+                                    <h5 class="text-primary text-3xl font-bold mb-4">
+                                        Phần mềm quản lý phòng khám
+                                    </h5>
+                                    <h2 class="text-primary text-4xl font-bold">
+                                        EMR
+                                    </h2>
+
+                                    <p class="text-left text-[16px] mt-7 mb-7">
+                                        But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                        praising pain was born and I will give you a complete account of the system, and
+                                        expound the actual teachings of the great explorer of the truth, the
+                                        master-builder
+                                        of human happiness. No one rejects, dislik
+                                    </p>
+
+                                </div>
+
+                                <button class="read-more animation-element">
+                                    <span class="text-white text-[16px]">Xem thêm</span>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="EHR" class="relative mt-[35px] ">
+            <div class="container mx-auto">
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-5 md:gap-[100px] items-center">
+
+                    <div class="relative order-last md:order-first">
+                        <div class="mt-[50px] mx-[15px]">
+                            <div class="intro w-full text-center md:text-left">
+
+                                <div class="product-intro animation-element relative z-10">
+                                    <h5 class="text-primary text-3xl font-bold mb-4">
+                                        Đặt hẹn & theo dõi sức khỏe bệnh nhân
+                                    </h5>
+                                    <h2 class="text-primary text-4xl font-bold">
+                                        ỨNG DỤNG EHR
+                                    </h2>
+
+                                    <p class="text-left text-[16px] mt-7 mb-7">
+                                        But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                        praising pain was born and I will give you a complete account of the system, and
+                                        expound the actual teachings of the great explorer of the truth, the
+                                        master-builder
+                                        of human happiness. No one rejects, dislik
+                                    </p>
+                                </div>
+
+
+                                <button class="read-more animation-element">
+                                    <span class="text-white text-[16px]">Xem thêm</span>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative p-[10px]">
+                        <div class="product-image animation-element">
+                            <img src="./assets/images/ehr-intro.png" alt="ehr" loading="lazy"
+                                class="w-full rounded-[50px]">
+                        </div>
+
+                        <div class="absolute right-[-100px] bottom-[-100px] md:right-[-50px]">
+                            <img src="./assets/images/circle-dot.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="Tele-medicine" class="relative mt-[35px]">
+            <div class="container mx-auto">
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-5 md:gap-[100px] items-center">
+                    <div class="relative p-[10px]">
+                        <div class="product-image animation-element">
+                            <img src="./assets/images/telemedicine-intro.jpg" alt="tele-medicine" loading="lazy"
+                                class="w-full rounded-[50px]">
+                        </div>
+
+                        <div class="absolute right-[-100px] bottom-[-100px] md:right-[-50px]">
+                            <img src="./assets/images/circle-dot.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="relative">
+                        <div class="mt-[50px] mx-[15px]">
+                            <div class="intro w-full text-center md:text-left">
+
+                                <div class="absolute left-[-50px] top-[-40px]">
+                                    <img src="./assets/images/dot.svg" alt="">
+                                </div>
+                                <div class="product-intro animation-element relative text-center md:text-left z-10">
+
+                                    <h5 class="text-primary text-3xl font-bold mb-4">
+                                        Thăm khám từ xa
+                                    </h5>
+                                    <h2 class="text-primary text-4xl font-bold">
+                                        TELE MEDICINE
+                                    </h2>
+
+                                    <p class="text-left text-[16px] mt-7 mb-7">
+                                        But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                        praising pain was born and I will give you a complete account of the system, and
+                                        expound the actual teachings of the great explorer of the truth, the
+                                        master-builder
+                                        of human happiness. No one rejects, dislik
+                                    </p>
+
+
+                                </div>
+
+                                <button class="read-more animation-element">
+                                    <span class="text-white text-[16px]">Xem thêm</span>
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="feedback" class="overflow-hidden relative w-full">
+
+        <div class="swiper multiple-slide-carousel swiper-container relative">
+            <div class="swiper-wrapper mb-16">
+                <div class="swiper-slide">
+                    <div class="text-left p-4 rounded-[25px] bg-[#f8f8f8]">
+                        <p class="text-[14px]">
+                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                            was born and I will give you a complete account of the system, and expound the actual teachings
+                            of the great explorer of the truth
+                        </p>
+    
+                        <div class="customer-section flex flex-col sm:inline-block mt-4">
+                            <div class="pb-[14px]">
+                                <img src="https://demo.phlox.pro/corporate-free/wp-content/uploads/sites/134/2019/11/op_craig-mckay-jmURdhtm-1.png"
+                                    alt="" class="w-[87px] h-[87px]">
+                            </div>
+    
+                            <div class="customer-info table-cell">
+                                <div class="name text-xl text-primary font-bold">
+                                    Risk Management
+                                </div>
+                                <div class="job text-[#b1b1b1] uppercase text-md">
+                                    DESIGNER
+                                </div>
+    
+                                <ul class="rating">
+                                    <li class="inline">
+                                        <img src="./assets/images/star.svg" alt="" class="inline-block h-4 w-4">
+                                    </li>
+                                    <li class="inline">
+                                        <img src="./assets/images/star.svg" alt="" class="inline-block h-4 w-4">
+                                    </li>
+                                    <li class="inline">
+                                        <img src="./assets/images/star.svg" alt="" class="inline-block h-4 w-4">
+                                    </li>
+                                    <li class="inline">
+                                        <img src="./assets/images/star.svg" alt="" class="inline-block h-4 w-4">
+                                    </li>
+                                    <li class="inline">
+                                        <img src="./assets/images/star.svg" alt="" class="inline-block h-4 w-4">
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="text-left p-4 rounded-[25px] bg-[#f8f8f8]">
+                        <p class="text-[14px]">
+                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                            was born and I will give you a complete account of the system, and expound the actual teachings
+                            of the great explorer of the truth
+                        </p>
+    
+                        <div class="customer-section flex flex-col sm:inline-block mt-4">
+                            <div class="pb-[14px]">
+                                <img src="https://demo.phlox.pro/corporate-free/wp-content/uploads/sites/134/2019/11/op_craig-mckay-jmURdhtm-1.png"
+                                    alt="" class="w-[87px] h-[87px]">
+                            </div>
+    
+                            <div class="customer-info table-cell">
+                                <div class="name text-xl text-primary font-bold">
+                                    Risk Management
+                                </div>
+                                <div class="job text-[#b1b1b1] uppercase text-md">
+                                    DESIGNER
+                                </div>
+    
+                                <ul class="rating">
+                                    <li class="inline">
+                                        <img src="./assets/images/star.svg" alt="" class="inline-block h-4 w-4">
+                                    </li>
+                                    <li class="inline">
+                                        <img src="./assets/images/star.svg" alt="" class="inline-block h-4 w-4">
+                                    </li>
+                                    <li class="inline">
+                                        <img src="./assets/images/star.svg" alt="" class="inline-block h-4 w-4">
+                                    </li>
+                                    <li class="inline">
+                                        <img src="./assets/images/star.svg" alt="" class="inline-block h-4 w-4">
+                                    </li>
+                                    <li class="inline">
+                                        <img src="./assets/images/star.svg" alt="" class="inline-block h-4 w-4">
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="text-left p-4 rounded-[25px] bg-[#f8f8f8]">
+                        <p class="text-[14px]">
+                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                            was born and I will give you a complete account of the system, and expound the actual teachings
+                            of the great explorer of the truth
+                        </p>
+    
+                        <div class="customer-section flex flex-col sm:inline-block mt-4">
+                            <div class="pb-[14px]">
+                                <img src="https://demo.phlox.pro/corporate-free/wp-content/uploads/sites/134/2019/11/op_craig-mckay-jmURdhtm-1.png"
+                                    alt="" class="w-[87px] h-[87px]">
+                            </div>
+    
+                            <div class="customer-info table-cell">
+                                <div class="name text-xl text-primary font-bold">
+                                    Risk Management
+                                </div>
+                                <div class="job text-[#b1b1b1] uppercase text-md">
+                                    DESIGNER
+                                </div>
+    
+                                <ul class="rating">
+                                    <li class="inline">
+                                        <img src="./assets/images/star.svg" alt="" class="inline-block h-4 w-4">
+                                    </li>
+                                    <li class="inline">
+                                        <img src="./assets/images/star.svg" alt="" class="inline-block h-4 w-4">
+                                    </li>
+                                    <li class="inline">
+                                        <img src="./assets/images/star.svg" alt="" class="inline-block h-4 w-4">
+                                    </li>
+                                    <li class="inline">
+                                        <img src="./assets/images/star.svg" alt="" class="inline-block h-4 w-4">
+                                    </li>
+                                    <li class="inline">
+                                        <img src="./assets/images/star.svg" alt="" class="inline-block h-4 w-4">
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                </div>
+               
+            </div>
+
+
+            <div class="absolute flex justify-center items-center m-auto left-0 right-0 w-fit bottom-12">
+                <button id="slider-button-left"
+                    class="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full  hover:bg-indigo-600 !-translate-x-16"
+                    data-carousel-prev>
+                    <svg class="h-5 w-5 text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button id="slider-button-right"
+                    class="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full hover:bg-indigo-600 !translate-x-16"
+                    data-carousel-next>
+                    <svg class="h-5 w-5 text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/animate.js"></script>
+    <script>
+        var swiper = new Swiper(".multiple-slide-carousel", {
+            loop: true,
+            slidesPerView: 3,
+            // spaceBetween: 20,
+            navigation: {
+                nextEl: ".multiple-slide-carousel .swiper-button-next",
+                prevEl: ".multiple-slide-carousel .swiper-button-prev",
+            },
+            breakpoints: {
+                1920: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                1028: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                990: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

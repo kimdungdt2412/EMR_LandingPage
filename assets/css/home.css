@@ -1,0 +1,40 @@
+.product.animation-element.animated {
+    @apply animate-mmslideInRight animation-fill-both
+}
+
+.product.animation-delay-300.animation-element.animated {
+    @apply animate-mmslideInRight animation-fill-both [animation-delay:300ms]
+}
+
+.product.animation-delay-600.animation-element.animated {
+    @apply animate-mmslideInRight animation-fill-both [animation-delay:600ms]
+}
+
+.read-more {
+    @apply py-[18px] px-[47px] bg-button-pattern mb-3 rounded-[100em] transition-shadow hover:shadow-[0px_8px_20px_0px_rgba(3_213_159_.36)]
+}
+
+.product-image.animation-element.animated {
+    @apply animate-maskFromToTop animation-fill-both
+}
+
+.product-intro.animation-element.animated {
+    @apply animate-mmFadeInUp animation-fill-both [animation-duration:800ms]
+}
+
+.read-more.animation-element.animated {
+    @apply animate-mmFadeInUp animation-fill-both [animation-duration:800ms] [animation-delay:200ms]
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: max-content !important;
+    padding-bottom: 64px !important;
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    position: relative;
+}
+
+.swiper-pagination-bullet {
+    background: #4f46e5;
+}
