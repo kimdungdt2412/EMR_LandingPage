@@ -1,5 +1,4 @@
-$(document).ready(function() {
-
+$(function() {
     /** ---------------------------- //
      *  @group viewport trigger script 
      * for adding or removing classes from elements in view within viewport
@@ -44,9 +43,7 @@ $(document).ready(function() {
 
     $window.on('scroll resize', checkIfInView);
     $window.trigger('scroll');
-});
-
-$(function() {
+    
     var parallaxLeftItems = document.querySelectorAll('.parallax-left');
     new simpleParallax(parallaxLeftItems, {
         overflow: true,
