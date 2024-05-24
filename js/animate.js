@@ -105,4 +105,64 @@ $(function() {
         }
 
     });
+
+
+
+    //Swiper
+    var swiper = new Swiper(".multiple-slide-carousel", {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 4000
+        },
+        breakpoints: {
+            1920: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            }
+        }
+    });
+
+
+    var blogSwiper = new Swiper(".blog-content", {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".blog .swiper-button-next",
+            prevEl: ".blog .swiper-button-prev",
+        },
+        breakpoints: {
+            1920: {
+                slidesPerView: 4,
+                spaceBetween: 50
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 50
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 50
+            },
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            }
+        }
+    });
+  
 });
