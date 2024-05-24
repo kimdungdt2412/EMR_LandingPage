@@ -10,7 +10,8 @@ module.exports = {
       bg_primary: "#F2FEFE",
       darkBlue: '#161c2d',
       brown: '#333333',
-      borderColor: '#e6e6e6'
+      borderColor: '#e6e6e6',
+      footerBorder: 'rgba(255, 255, 255, 0.15)'
     },
     fontFamily: {
       sans: ['Nunito', 'sans-serif'],
@@ -55,8 +56,8 @@ module.exports = {
         }
       },
       mmslideIn: {
-        '0%': { transform: 'translateY(15%)' },
-        '100%': { transform: 'translateY(0)' }
+        '0%': { opacity: 0, transform: 'translateY(15%)' },
+        '100%': { opacity: 1, transform: 'translateY(0)' }
       },
       mmslideOut: {
         '0%': { transform: 'translateY(0)' },
@@ -98,10 +99,12 @@ module.exports = {
     },
     boxShadow: {
       'card-hover': '16px 23px 52px 0px rgba(0,0,0,.12)',
+      'post-hover': '16px 23px 52px rgba(0,0,0,.22)'
     },
     extend: {
       backgroundImage: {
         'button-pattern': "linear-gradient(to right, #03d59f, #00c1c2)",
+        'path157': "url(/assets/images/bg.svg)"
       },
     },
   },

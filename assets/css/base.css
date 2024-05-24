@@ -10,6 +10,9 @@ body {
     padding-left: 12px
 }
 
+.swiper-button-next, .swiper-button-prev {
+    color: #003777
+}
 @layer utilities {
     .animation-fill-both {
         animation-fill-mode: both;

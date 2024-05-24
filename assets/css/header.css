@@ -1,5 +1,12 @@
 @layer base {
     .nav-item {
-        @apply block py-3 pr-4 pl-3 text-darkBlue font-bold hover:text-primary lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0 ;
+        @apply block py-3 pr-4 pl-3 text-darkBlue font-bold hover:text-primary lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0;
     }
+
+
+}
+
+.mobile-menu {
+    overflow: hidden;
+    transition: height 200ms;
 }
