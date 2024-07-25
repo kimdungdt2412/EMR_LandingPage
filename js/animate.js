@@ -36,14 +36,20 @@ $(function() {
             //check to see if this current container is within viewport
             if ((elementBottomPosition >= windowTopPosition) &&
                 (elementTopPosition <= windowBottomPosition)) {
+                if ($element.attr('id') === 'year-counter' && !$element.attr('class').includes('animated')) animateValue($element[0], 0, 20, 1000, true)
+                if ($element.attr('id') === 'customer-counter' && !$element.attr('class').includes('animated')) animateValue($element[0], 0, 5000, 1000)
+                if ($element.attr('id') === 'office-counter' && !$element.attr('class').includes('animated')) animateValue($element[0], 0, 4, 1000)
+                if ($element.attr('id') === 'employee-counter' && !$element.attr('class').includes('animated')) animateValue($element[0], 0, 200, 1000, true)
+
                 $element.addClass('animated');
+
             }
         });
     }
 
     $window.on('scroll resize', checkIfInView);
     $window.trigger('scroll');
-    
+
     var parallaxLeftItems = document.querySelectorAll('.parallax-left');
     new simpleParallax(parallaxLeftItems, {
         overflow: true,
@@ -83,9 +89,36 @@ $(function() {
     var parallaxItems = document.querySelectorAll('.simple-parallax-item');
     new simpleParallax(parallaxItems, {
         overflow: true,
+        scale: 1.5,
+        delay: 1,
+        transition: 'cubic-bezier(0,0,0,1)'
+    });
+
+    var parallaxDelayItems = document.querySelectorAll('.simple-parallax-delay-item');
+    new simpleParallax(parallaxDelayItems, {
+        overflow: true,
+        scale: 2,
+        delay: 1.5,
+        transition: 'cubic-bezier(0,0,0,1)'
+    });
+
+    var parallaxUpLargeItems = document.querySelectorAll('.parallax-large-item');
+    new simpleParallax(parallaxUpLargeItems, {
+        overflow: true,
+        scale: 2,
         delay: .6,
         transition: 'cubic-bezier(0,0,0,1)'
     });
+
+    var parallaxRightLargeItems = document.querySelectorAll('.parallax-right-large-item');
+    new simpleParallax(parallaxRightLargeItems, {
+        overflow: true,
+        orientation: 'right',
+        scale: 2,
+        delay: .6,
+        transition: 'cubic-bezier(0,0,0,1)'
+    });
+
 
 
     //Navbar collapse
@@ -93,15 +126,15 @@ $(function() {
     var w = $("#mobile-menu");
     var l = $("#mobile-menu-list");
 
-    w.height(0);
+    w.css({ "maxHeight": 0 })
 
     b.on("click", function() {
         if (w.hasClass('open')) {
             w.removeClass('open');
-            w.height(0);
+            w.css({ "maxHeight": 0 })
         } else {
             w.addClass('open');
-            w.height(l.outerHeight(true));
+            w.css({ "maxHeight": l.outerHeight(true) })
         }
 
     });
@@ -137,10 +170,6 @@ $(function() {
         loop: true,
         slidesPerView: 3,
         spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
         navigation: {
             nextEl: ".blog .swiper-button-next",
             prevEl: ".blog .swiper-button-prev",
@@ -164,5 +193,39 @@ $(function() {
             }
         }
     });
-  
+
+    //counter
+    function animateValue(obj, start, end, duration, plus = false) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            obj.innerHTML = plus ? `${Math.floor(progress * (end - start) + start)}+` : Math.floor(progress * (end - start) + start);
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            }
+        };
+        window.requestAnimationFrame(step);
+    }
+
+    function confetti() {
+        $.each($(".particletext.confetti"), function() {
+            var confetticount = ($(this).width() / 50) * 10;
+            console.log(confetticount)
+            for (var i = 0; i <= confetticount; i++) {
+                console.log(this, 'i')
+                $(this).append('<span class="particle c' + $.rnd(1, 2) + '" style="top:' + $.rnd(10, 50) + '%; left:' + $.rnd(0, 100) + '%;width:' + $.rnd(6, 8) + 'px; height:' + $.rnd(3, 4) + 'px;animation-delay: ' + ($.rnd(0, 30) / 10) + 's;"></span>');
+            }
+        });
+    }
+
+    jQuery.rnd = function(m, n) {
+        m = parseInt(m);
+        n = parseInt(n);
+        return Math.floor(Math.random() * (n - m + 1)) + m;
+    }
+
+    confetti()
+
+
 });

@@ -1,0 +1,95 @@
+{
+    "nav-product": "Products",
+    "nav-service": "Services",
+    "nav-about-us": "About us",
+    "nav-contact": "Contact",
+    "vi": "Vietnamese",
+    "en": "English",
+    "read-more": "Read more",
+
+
+    "home-banner-title-1": "CLINIC MANAGEMENT",
+    "home-banner-title-2": "SOFTWARE",
+    "home-banner-content-1": "Improve management efficiency and optimize the examination process.",
+    "home-banner-content-2": "Y Chinh Xac's EMR clinic management software helps medical facilities improve management efficiency and optimize medical examination and treatment processes.",
+
+
+    "home-product-title-1": "OUR",
+    "home-product-title-2": "PRODUCTS",
+    "home-product-content": "Discover comprehensive and innovative medical management solutions that help improve the efficiency and quality of clinic services.",
+    "home-product-emr-1": "Safety & Security",
+    "home-product-emr-2": "No installation",
+    "home-product-emr-3": "Stable operation",
+    "home-product-emr-4": "Updated according to the latest Health Decision",
+    "home-product-ehr-1": "User-friendly interface",
+    "home-product-ehr-2": "Integrating AI technology",
+    "home-product-ehr-3": "Direct link to bank",
+    "home-product-tele-1": "Integration of EMR system",
+    "home-product-tele-2": "Stable transmission",
+    "home-product-tele-3": "Safety & Security",
+    "home-product-tele-4": "Lên lịch & Thông báo",
+
+
+    "home-product-detail-emr-title": "Clinic management software",
+    "home-product-detail-emr-desc": "Precision EMR is a complete, installation-free healthcare management solution that helps clinics run every process efficiently.",
+    "home-product-detail-emr-content-1": "Provides a set of tools",
+    "home-product-detail-emr-content-2": "to manage and execute common clinic workflows",
+    "home-product-detail-emr-content-3": "Multi-platform connectivity:",
+    "home-product-detail-emr-content-4": "EHR applications and other wearable medical devices.",
+
+
+    "home-product-detail-ehr-title": "Book appointments & monitor patient health",
+    "home-product-detail-ehr-main-title": "EHR APPLICATION",
+    "home-product-detail-ehr-desc": "The application supports users to effectively manage electronic medical records for themselves and their families. With the ability to link online banking of medical examination and treatment facilities, patients can:",
+    "home-product-detail-ehr-content-1": "Online payment:",
+    "home-product-detail-ehr-content-2": "appointments, prescriptions and laboratory orders.",
+    "home-product-detail-ehr-content-3": "Utilities for artificial intelligence (AI) applications:",
+    "home-product-detail-ehr-content-4": "in visualizing and recommending health improvement programs.",
+    "home-product-detail-ehr-content-5": "Notice and reminder:",
+    "home-product-detail-ehr-content-6": "medical appointments, medication time,...",
+
+
+    "home-product-detail-tele-title": "Remote examination",
+
+
+    "home-feedback-title-1": "What they've said",
+    "home-feedback-title-2": "ABOUT US",
+
+    "blog-title": "NEWS - EVENTS",
+
+
+    "contact-main-title": "CONTACT US",
+    "contact-title": "Let's accurately convert the clinic number with Y chinh xac!",
+    "contact-desc": "Receive detailed advice on products and the opportunity to experience free services, for customers who contact us as soon as possible.",
+    "name": "Full name:",
+    "tel": "Phone number:",
+    "content": "Content:",
+    "send-info": "Send information",
+    "address": "ADDRESS",
+    "phone": "PHONE",
+    "working-day": "WORKING DAYS",
+    "address-content": "33 Street 18, Tan Hung Ward, District 7, Ho Chi Minh City",
+    "working-day-content": "Monday - Saturday",
+
+
+    "about": "ABOUT US",
+    "about-vission": "OUR VISSION",
+    "about-mission": "OUR MISSION",
+    "about-value": "OUR VALUE",
+    "about-intro-company": "Brief introduction about the company",
+    "about-year": "YEARS OF EXPERIENCE",
+    "about-partner": "PARTNER",
+    "about-office": "OFFICES",
+    "about-employee": "EMPLOYEES",
+    "about-development": "Development journey",
+
+
+
+    "footer-partner": "Partner",
+    "footer-hospital": "Hospital",
+    "footer-large-clinic": "Large clinic",
+    "footer-small-clinic": "Small clinic",
+    "footer-management": "Hospital management software",
+    "footer-his": "Connecting to the HIS system",
+    "footer-national": "Connecting to the national gate"
+}

@@ -1,0 +1,95 @@
+{
+    "nav-product": "Sản phẩm",
+    "nav-service": "Dịch vụ",
+    "nav-about-us": "Về chúng tôi",
+    "nav-contact": "Liên hệ",
+    "vi": "Tiếng Việt (VI)",
+    "en": "Tiếng Anh (EN)",
+    "read-more": "Xem thêm",
+
+
+    "home-banner-title-1": "PHẦN MỀM",
+    "home-banner-title-2": "QUẢN LÝ PHÒNG KHÁM",
+    "home-banner-content-1": "Nâng cao hiệu quả quản lý, tối ưu hóa quy trình khám.",
+    "home-banner-content-2": "Phần mềm quản lý phòng khám EMR của Y Chính Xác giúp các cơ sở y tế cải thiện hiệu quả quản lý và tối ưu hóa quy trình khám chữa bệnh.",
+
+
+    "home-product-title-1": "SẢN PHẨM",
+    "home-product-title-2": "CỦA CHÚNG TÔI",
+    "home-product-content": "Khám phá giải pháp quản lý y tế toàn diện và tân tiến, giúp nâng cao hiệu quả và chất lượng dịch vụ phòng khám.",
+    "home-product-emr-1": "An toàn & Bảo mật",
+    "home-product-emr-2": "Không lắp đặt",
+    "home-product-emr-3": "Vận hành ổn định",
+    "home-product-emr-4": "Cập nhật theo QĐ Y tế mới nhất",
+    "home-product-ehr-1": "Giao diện thân thiện",
+    "home-product-ehr-2": "Tich hợp công nghệ AI",
+    "home-product-ehr-3": "Liên kết trực tiếp ngân hàng",
+    "home-product-tele-1": "Tích hợp hệ thống EMR",
+    "home-product-tele-2": "Đường truyền ổn định",
+    "home-product-tele-3": "An toàn & Bảo mật",
+    "home-product-tele-4": "Lên lịch & Thông báo",
+
+    "home-product-detail-emr-title": "Phần mềm quản lý phòng khám",
+    "home-product-detail-emr-desc": "Precision EMR là một giải pháp quản lý y tế hoàn chỉnh, không cần cài đặt, giúp các phòng khám điều hành mọi quy trình một cách hiệu quả.",
+    "home-product-detail-emr-content-1": "Cung cấp bộ công cụ quản lý và thực thi",
+    "home-product-detail-emr-content-2": "quy trình làm việc thông thường của phòng khám.",
+    "home-product-detail-emr-content-3": "Kết nối đa nền tảng:",
+    "home-product-detail-emr-content-4": "ứng dụng EHR và các thiết bị y tế wearable khác.",
+
+
+    "home-product-detail-ehr-title": "Đặt hẹn & theo dõi sức khỏe bệnh nhân",
+    "home-product-detail-ehr-main-title": "ỨNG DỤNG EHR",
+    "home-product-detail-ehr-desc": "Ứng dụng hỗ trợ người dùng quản lý hồ sơ y tế điện tử của bản thân và gia đình một cách hiệu quả. Với hả năng liên kết trực tuyến ngân hàng của cơ sở khám chữa bệnh, bệnh    nhân có thể:",
+    "home-product-detail-ehr-content-1": "Thanh toán trực tuyến:",
+    "home-product-detail-ehr-content-2": "cuộc hẹn, toa thuốc và chỉ định cận lâm sàng.",
+    "home-product-detail-ehr-content-3": "Tiện ích ứng dụng trí tuệ nhân tạo (AI):",
+    "home-product-detail-ehr-content-4": "trong trực quan và đề xuất chương trình cải thiện sức khỏe.",
+    "home-product-detail-ehr-content-5": "Thông báo và gợi nhắc:",
+    "home-product-detail-ehr-content-6": "lịch hẹn khám bệnh, thời gian uống thuốc,...",
+
+
+    "home-product-detail-tele-title": "Thăm khám từ xa",
+
+
+    "home-feedback-title-1": "Khách hàng nói gì",
+    "home-feedback-title-2": "VỀ CHÚNG TÔI",
+
+
+    "blog-title": "TIN TỨC - SỰ KIỆN",
+
+
+    "contact-main-title": "LIÊN HỆ CHÚNG TÔI",
+    "contact-title": "Cùng Y chính xác chuyển đổi số phòng khám ngay!",
+    "contact-desc": "Nhận tư vấn chi tiết về sản phẩm và cơ hội trải nghiệm dịch vụ miễn phí, dành cho những khách hàng liên hệ sớm nhất.",
+    "name": "Họ tên:",
+    "tel": "Số điện thoại:",
+    "content": "Nội dung:",
+    "send-info": "Gửi thông tin",
+    "address": "ĐỊA CHỈ",
+    "phone": "ĐIỆN THOẠI",
+    "working-day": "THỜI GIAN LÀM VIỆC",
+    "address-content": "33 đường số 18, phường Tân Hưng, Quận 7, TP Hồ Chí Minh",
+    "working-day-content": "Thứ 2 - Thứ 7",
+
+
+    "about": "VỀ CHÚNG TÔI",
+    "about-vission": "TẦM NHÌN",
+    "about-mission": "SỨ MỆNH",
+    "about-value": "GIÁ TRỊ CỐT LÕI",
+    "about-intro-company": "Giới thiệu sơ lược về công ty",
+    "about-year": "NĂM KINH NGHIỆM",
+    "about-partner": "ĐỐI TÁC",
+    "about-office": "VĂN PHÒNG",
+    "about-employee": "NHÂN VIÊN",
+    "about-development": "Chặng đường phát triển",
+
+
+
+    "footer-partner": "Đối tác",
+    "footer-hospital": "Đơn vị bệnh viện",
+    "footer-large-clinic": "Phòng khám lớn",
+    "footer-small-clinic": "Phòng khám nhỏ",
+    "footer-management": "Phần mềm quản lý bệnh viện",
+    "footer-his": "Kết nối hệ thống HIS",
+    "footer-national": "Liên thông cổng quốc gia"
+}

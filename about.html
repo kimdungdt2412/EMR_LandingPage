@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giới thiệu công ty T.D Medical company" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link href="/packages/swiper/package/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="./assets/css/output.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <title>Về chúng tôi - T.D Medical company</title>
+</head>
+
+<body class="about">
+    <header
+        class="header fixed transition-colors top-0 z-50 w-screen py-2 lg:py-1 bg-white drop-shadow-md lg:drop-shadow-none">
+        <nav class=" container mx-auto py-0 lg:py-2.5 dark:bg-gray-800">
+            <div class="flex flex-wrap justify-between items-center mx-auto">
+                <a href="/" class="flex items-center">
+                    <img src="./assets/images/logo.png" class="mr-3 h-9 lg:h-10" alt="EMR Logo" />
+                    <span class="self-center text-lg lg:text-xl text-primary font-semibold whitespace-nowrap">Y chính
+                        xác</span>
+                </a>
+
+
+
+                <div class="right-nav flex">
+
+
+                    <div class="hidden justify-between items-center w-full lg:flex lg:w-auto">
+                        <ul id="list"
+                            class="flex flex-col mt-2 font-medium lg:flex-row lg:space-x-8 lg:mt-0 lg:items-center">
+
+                            <li>
+                                <button id="dropdownProductButton" class="nav-item flex justify-between items-center"
+                                    data-dropdown-toggle="product-dropdown" data-dropdown-placement="bottom-end"
+                                    data-dropdown-trigger="click">
+                                    <span data-i18n="nav-product"></span>
+                                    <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg>
+                                </button>
+                            </li>
+
+                            <li>
+                                <a href="/services" data-i18n="nav-service" class="nav-item">Dịch vụ</a>
+                            </li>
+
+                            <li>
+                                <a href="/about" data-i18n="nav-about-us" class="nav-item">Về chúng tôi</a>
+                            </li>
+
+                            <li>
+                                <a href="/contact" data-i18n="nav-contact" class="nav-item">Liên hệ</a>
+                            </li>
+
+                            <!-- <li>
+                                <a href="#" class="nav-item">Demo</a>
+                            </li> -->
+                        </ul>
+
+                        <div id="product-dropdown"
+                            class="z-10 hidden animate-mmfadeIn rounded-lg w-[200px] bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            <ul class="py-2 text-darkBlue" aria-labelledby="dropdownProductButton">
+                                <li>
+                                    <a href="/EMR"
+                                        class="block px-4 py-2 transition-all hover:text-primary hover:font-semibold">EMR</a>
+                                </li>
+                                <li>
+                                    <a href="/EHR"
+                                        class="block px-4 py-2 transition-all hover:text-primary hover:font-semibold">App
+                                        EHR</a>
+                                </li>
+                                <li>
+                                    <a href="/telemedicine"
+                                        class="block px-4 py-2 transition-all hover:text-primary hover:font-semibold">Tele
+                                        Medicine</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <button id="dropdownLangButton" class="mr-2 lg:mr-0 lg:ml-8" data-dropdown-toggle="lang-dropdown"
+                        data-dropdown-placement="bottom-end" data-dropdown-trigger="click">
+
+                        <img id="lang-icon" class="w-8 h-8 rounded-full translate-y-[-1px]"
+                            src="./assets/images/vi.png">
+                    </button>
+
+                    <div class="flex items-center lg:hidden lg:order-2">
+                        <button id="nav-button" type="button"
+                            class="inline-flex items-center p-1 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div id="lang-dropdown"
+                        class="z-10 hidden animate-mmfadeIn rounded-lg w-[200px] bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                        <ul class="py-2 text-darkBlue" aria-labelledby="dropdownLangButton">
+                            <li>
+                                <a href="/" onclick="changeLanguage('vi')"
+                                    class="px-4 py-2 transition-all flex items-center hover:text-primary hover:font-semibold">
+                                    <img src="/assets/images/vietnam.png" class="w-8 inline-block mr-2">
+                                    <span data-i18n="vi"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/" onclick="changeLanguage('en')"
+                                    class="px-4 py-2 transition-all flex items-center hover:text-primary hover:font-semibold">
+                                    <img src="/assets/images/england.png" class="w-8 inline-block mr-2">
+                                    <span data-i18n="en"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="mobile-menu w-full lg:hidden" id="mobile-menu">
+                    <ul id="mobile-menu-list" class="flex flex-col mt-2 font-medium">
+
+                        <li>
+                            <div id="accordion-collapse" data-accordion="collapse">
+                                <button class="nav-item flex items-center w-full bg-white"
+                                    data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                                    aria-controls="accordion-collapse-body-1" id="accordion-collapse-heading-1">
+
+                                    <span data-i18n="nav-product"></span>
+                                    <svg class="h-5 w-5 flex-none ml-2" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+
+                                </button>
+
+                                <div id="accordion-collapse-body-1" class="hidden"
+                                    aria-labelledby="accordion-collapse-heading-1">
+
+                                    <a href="/EMR"
+                                        class="block py-2 pl-6 pr-3 text-[15px] font-semibold leading-7 text-gray-900 hover:text-primary">EMR</a>
+                                    <a href="/EHR"
+                                        class="block py-2 pl-6 pr-3 text-[15px] font-semibold leading-7 text-gray-900 hover:text-primary">App
+                                        EHR</a>
+                                    <a href="/telemedicine"
+                                        class="block py-2 pl-6 pr-3 text-[15px] font-semibold leading-7 text-gray-900 hover:text-primary">Tele
+                                        Medicine</a>
+
+                                </div>
+                            </div>
+
+
+                        </li>
+
+                        <li>
+                            <a href="/services" data-i18n="nav-service" class="nav-item">Dịch vụ</a>
+                        </li>
+
+                        <li>
+                            <a href="/about" data-i18n="nav-about-us" class="nav-item">Về chúng tôi</a>
+                        </li>
+
+                        <li>
+                            <a href="/contact" data-i18n="nav-contact" class="nav-item">Liên hệ</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#" class="nav-item">Demo</a>
+                        </li> -->
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="header mt-[120px] xl:mt-[180px]">
+        <div class="container mx-auto relative ">
+            <div class="about-title animation-element relative z-10 text-primary text-center">
+                <h6 data-i18n="about" class="font-semibold mb-2">VỀ CHÚNG TÔI</h6>
+                <h2 class="text-[40px] font-bold">T.D MEDICAL
+                    <br />
+                    COMPANY
+                </h2>
+            </div>
+
+
+            <div class="about-icon animation-element absolute left-[40%] top-0">
+                <img src="./assets/images/dot.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="banner relative pt-20">
+        <div class="container mx-auto relative z-10 xl:pt-10">
+            <div class="preview grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-10 pb-32">
+                <div
+                    class="animationFadeInRightDelay500 animation-element group rounded-[25px] bg-white shadow-hover-v1 hover:bg-primary transition-all duration-300">
+                    <div class="flex items-center flex-col pt-[60px] px-[30px] pb-[25px]">
+
+                        <div class="vission-svg flex items-center mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="146.741" height="146.032"
+                                viewBox="0 0 146.741 146.032">
+                                <g id="startup" transform="translate(-1 -1)">
+                                    <path class="pic1" id="Path_1688"
+                                        d="M93.053,70.583l-4.734,0V56.408H83.586V70.59l-4.734,0V61.142H74.119v9.453l-4.734,0V51.675H64.651V70.6l-4.734,0v-14.2H55.184v14.2l-5.07,0L45.689,41.848l-4.677.72,5.041,32.778,47-.028Z"
+                                        transform="translate(54.688 55.83)" fill="#003777"></path>
+                                    <path class="pic1" id="Path_1689"
+                                        d="M48,19.932l-9.131,0V5.734H34.135V19.941l-4.734,0V10.467H24.668v9.479l-4.734,0V1H15.2V19.951l-4.734,0V5.734H5.734V19.958L1,19.96v4.734l42.938-.026,4.426,28.761,4.677-.72Z"
+                                        fill="#003777"></path>
+                                    <path class="pic2" id="Path_1690"
+                                        d="M70.7,1A49.581,49.581,0,0,0,22.846,63.985l.166.6.592.592a57.539,57.539,0,0,1,4.059-4.57,58.128,58.128,0,0,1,9.971-7.964c-.043-.649-.066-1.3-.066-1.941A33.135,33.135,0,1,1,70.7,83.837c-.644,0-1.292-.024-1.941-.066A58.015,58.015,0,0,1,60.8,93.742a58.013,58.013,0,0,1-4.57,4.059l.589.589.6.166A49.685,49.685,0,1,0,70.7,1Z"
+                                        transform="translate(27.336)" fill="#03d59f"></path>
+                                    <path class="pic2" id="Path_1691"
+                                        d="M40.567,59.135A16.567,16.567,0,1,1,57.135,42.567,16.587,16.587,0,0,1,40.567,59.135Zm0-21.3A4.734,4.734,0,1,0,45.3,42.567,4.738,4.738,0,0,0,40.567,37.834Z"
+                                        transform="translate(31.436 34.17)" fill="#03d59f"></path>
+                                    <path class="pic1" id="Path_1692"
+                                        d="M35.1,44.2a7.1,7.1,0,1,1,7.1-7.1A7.109,7.109,0,0,1,35.1,44.2Zm0-9.467A2.367,2.367,0,1,0,37.467,37.1,2.369,2.369,0,0,0,35.1,34.734Z"
+                                        transform="translate(36.903 39.637)" fill="#003777"></path>
+                                    <path class="pic1" id="Path_1693" d="M0,0H30.124V4.734H0Z"
+                                        transform="translate(8.779 136.587) rotate(-45)" fill="#003777"></path>
+                                    <path class="pic1" id="Path_1694" d="M0,0H6.693V4.734H0Z"
+                                        transform="translate(1.678 143.686) rotate(-45)" fill="#003777"></path>
+                                    <path class="pic1" id="Path_1695" d="M0,0H20.082V4.734H0Z"
+                                        transform="translate(22.976 136.59) rotate(-45)" fill="#003777"></path>
+                                    <path class="pic1" id="Path_1696" d="M0,0H6.693V4.734H0Z"
+                                        transform="translate(15.876 143.686) rotate(-45)" fill="#003777"></path>
+                                    <path class="pic1" id="Path_1697" d="M0,0H20.082V4.734H0Z"
+                                        transform="translate(8.78 122.39) rotate(-45)" fill="#003777"></path>
+                                    <path class="pic1" id="Path_1698" d="M0,0H6.693V4.734H0Z"
+                                        transform="translate(1.68 129.485) rotate(-45)" fill="#003777"></path>
+                                    <path class="pic1" id="Path_1699"
+                                        d="M95.3,7A35.542,35.542,0,0,0,59.8,42.5c0,.215.019.428.028.641a60.956,60.956,0,0,0-9.24,7.593,60.328,60.328,0,0,0-11.32,15.7l-1.048,2.1H33.915A35.318,35.318,0,0,0,3.312,86.3L3,86.841V93.12l12.253-4.085A30.571,30.571,0,0,1,24.9,87.471h3.851L23.785,97.4,40.4,114.019l9.936-4.968V112.9a30.441,30.441,0,0,1-1.567,9.649l-4.083,12.255h6.279l.544-.312a35.318,35.318,0,0,0,17.76-30.6V99.586l2.1-1.048a60.319,60.319,0,0,0,15.7-11.318,60.973,60.973,0,0,0,7.593-9.242c.213.007.424.026.639.026a35.5,35.5,0,1,0,0-71ZM24.9,82.737a35.144,35.144,0,0,0-11.145,1.811L9.035,86.122A30.593,30.593,0,0,1,33.915,73.27h1.941l-4.734,9.467Zm16.433,25.521L29.548,96.472,36,83.577l18.236,18.234Zm23.2-4.367a30.6,30.6,0,0,1-12.849,24.882l1.574-4.722a35.2,35.2,0,0,0,1.808-11.15v-6.218l9.467-4.734Zm19.19-20.021A55.589,55.589,0,0,1,69.251,94.3l-10.558,5.28L38.225,79.116l5.28-10.561A55.712,55.712,0,0,1,81.172,39.108,18.935,18.935,0,0,0,98.7,56.636,55.327,55.327,0,0,1,83.726,83.871Zm9.593-46.1a6.725,6.725,0,0,1,6.719,6.719,56.43,56.43,0,0,1-.507,7.455A14.2,14.2,0,0,1,85.861,38.275,56.493,56.493,0,0,1,93.319,37.768Zm0-4.734A60.93,60.93,0,0,0,80.99,34.3a16.518,16.518,0,1,1,22.52,22.52,60.949,60.949,0,0,0,1.261-12.329A11.467,11.467,0,0,0,93.319,33.035Zm4.246,40.122A59.52,59.52,0,0,0,101.981,62.7,21.283,21.283,0,1,0,75.109,35.825,59.7,59.7,0,0,0,64.65,40.241,30.752,30.752,0,1,1,97.565,73.156Z"
+                                        transform="translate(2.734 8.201)" fill="#003777"></path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="vission-content w-full text-center">
+                            <h6 data-i18n="about-vission"
+                                class="text-green text-[30px] font-bold my-2 group-hover:text-white">TẦM NHÌN</h6>
+                            <p class="group-hover:text-white">
+                                but i must explain to you how all this mistaken idea of denouncing pleasure and praising
+                                pain was born and i will give you system, and expound.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div
+                    class="animationFadeInRightDelay1000 animation-element group md:[animation-delay:1000ms] rounded-[25px] bg-white shadow-hover-v1 hover:bg-primary transition-all duration-300">
+                    <div class="flex items-center flex-col pt-[60px] px-[30px] pb-[25px]">
+
+                        <div class="mission-svg flex items-center mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="149.312" height="146.903"
+                                viewBox="0 0 149.312 146.903">
+                                <g id="business" transform="translate(-1 -2)">
+                                    <path class="pic2" id="Path_1700"
+                                        d="M70.392,30.785a13.48,13.48,0,0,0-25.5.653l-8.768,27.9c1.431,3.451,3.15,6.013,5.7,6.013,7.827,0,7.827-24.083,15.651-24.083S65.31,65.349,73.142,65.349c3.227,0,5.122-4.087,6.786-8.894Z"
+                                        transform="translate(49.468 28.165)" fill="#03d59f"></path>
+                                    <path class="pic2" id="Path_1701"
+                                        d="M42.94,35.716a14.446,14.446,0,0,1,11.839-14.2l.007-.01a11.867,11.867,0,0,0-14.931-9.423A14.452,14.452,0,0,0,11.833,18.86l.019.019c-.075,0-.144-.022-.219-.022a9.633,9.633,0,0,0,0,19.266h31.51l.012-.017a14.5,14.5,0,0,1-.214-2.391Z"
+                                        transform="translate(1.408)" fill="#03d59f"></path>
+                                    <path class="pic1" id="Path_1702"
+                                        d="M122.116,56.7a15.951,15.951,0,0,0-12.744-10.189V31.186L147.6,17.531,109.819,3h-5.264V46.577A15.813,15.813,0,0,0,92.066,57.472L79.947,96.031a12.038,12.038,0,0,0-4.518-6.36L63.9,81.437l4.053-18.23H74.88A19.162,19.162,0,0,0,92.1,52.574L101.265,34.3A8.348,8.348,0,0,0,86.32,26.861L78.572,42.356a7.181,7.181,0,0,1-6.461,3.993H70.574a16.858,16.858,0,1,0-23.553,0H45.765A26.662,26.662,0,0,0,23.2,58.956L11.825,77.446a7.981,7.981,0,0,0-.506,7.434H1V118.6H31.5l-3.721,15.367a10.466,10.466,0,0,0-.291,2.442v.7a10.385,10.385,0,0,0,20.547,2.141L55.9,101.9l5.305,3.535v22.794a9.643,9.643,0,0,0,9.633,9.633h79.472v-5.25ZM109.371,7.987l24.381,9.378-24.381,8.708ZM46.757,34.307A12.041,12.041,0,1,1,58.8,46.349,12.055,12.055,0,0,1,46.757,34.307ZM37.235,84.881H27.062L38.978,66.154a6.355,6.355,0,0,1,2.3-2.163Zm.809,4.816-.1.2a17.075,17.075,0,0,1-30.544,0l-.1-.2H38.044ZM5.816,96.156a21.778,21.778,0,0,0,33.716,0V113.78H5.816Zm60.206,32.073V105.435a4.807,4.807,0,0,0-2.146-4.007l-6.758-4.506H52.028l-8.7,41.335a5.57,5.57,0,0,1-11.02-1.146v-.7a5.586,5.586,0,0,1,.157-1.31l4-16.5h7.889V84.881H42.14L47.267,58.39H44.349a11.128,11.128,0,0,0-9.433,5.178L22.3,83.387a3.21,3.21,0,0,1-2.721,1.493h-.91a3.223,3.223,0,0,1-2.745-4.91L27.305,61.48A21.817,21.817,0,0,1,45.765,51.165H72.111a11.974,11.974,0,0,0,10.77-6.656l7.747-15.495a3.532,3.532,0,1,1,6.331,3.131L87.8,50.416A14.371,14.371,0,0,1,74.883,58.39H64.091L58.509,83.505,72.631,93.591a7.245,7.245,0,0,1,3.025,5.881v28.757a4.817,4.817,0,1,1-9.633,0Zm13.111,4.817a9.534,9.534,0,0,0,1.339-4.817v-17.8L96.661,58.915a11.073,11.073,0,0,1,20.942-.532l27.731,74.663Z"
+                                        transform="translate(0 1.408)" fill="#003777"></path>
+                                    <path id="Path_1703" d="M56,53h4.817v4.816H56Z" transform="translate(77.454 71.821)"
+                                        fill="#003777"></path>
+                                    <path id="Path_1704" d="M52,53h4.817v4.816H52Z" transform="translate(71.821 71.821)"
+                                        fill="#003777"></path>
+                                    <path id="Path_1705" d="M48,53h4.817v4.816H48Z" transform="translate(66.188 71.821)"
+                                        fill="#003777"></path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="mission-content w-full text-center">
+                            <h6 data-i18n="about-mission"
+                                class="text-green text-[30px] font-bold my-2 group-hover:text-white">SỨ MỆNH</h6>
+                            <p class="group-hover:text-white">
+                                but i must explain to you how all this mistaken idea of denouncing pleasure and praising
+                                pain was born and i will give you system, and expound.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="animationFadeInRightDelay1500 animation-element group md:[animation-delay:1500ms] rounded-[25px] bg-white shadow-hover-v1 hover:bg-primary transition-all duration-300">
+                    <div class="flex items-center flex-col pt-[60px] px-[30px] pb-[25px]">
+
+                        <div class="value-svg flex items-center mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="diamond" width="146.895" height="146.895"
+                                viewBox="0 0 146.895 146.895">
+                                <g id="Group_663" data-name="Group 663" transform="translate(11.846 14.216)">
+                                    <path class="pic2" id="Path_1706"
+                                        d="M388.431,366.216A14.216,14.216,0,1,1,374.216,352,14.216,14.216,0,0,1,388.431,366.216Zm0,0"
+                                        transform="translate(-265.229 -261.968)" fill="#03d59f"></path>
+                                    <path class="pic2" id="Path_1707"
+                                        d="M68.431,62.216A14.216,14.216,0,1,1,54.216,48,14.216,14.216,0,0,1,68.431,62.216Zm0,0"
+                                        transform="translate(-40 -48)" fill="#03d59f"></path>
+                                    <path class="pic2" id="Path_1708"
+                                        d="M189.294,207.693l-42.647,45.016L104,207.693,118.216,184h56.862Zm0,0"
+                                        transform="translate(-85.046 -143.722)" fill="#03d59f"></path>
+                                </g>
+                                <path class="pic1" id="Path_1709"
+                                    d="M46.216,69.908h4.739V65.17A11.846,11.846,0,0,1,62.8,53.323H65.17V48.585H62.8A11.846,11.846,0,0,1,50.954,36.739V32H46.216v4.739A11.846,11.846,0,0,1,34.369,48.585H32v4.739h2.369A11.846,11.846,0,0,1,46.216,65.17Zm1.422-14.69a16.537,16.537,0,0,0-4.791-4.264,16.537,16.537,0,0,0,4.791-4.264,16.175,16.175,0,0,0,.947-1.505,16.052,16.052,0,0,0,.947,1.505,16.537,16.537,0,0,0,4.791,4.264,16.537,16.537,0,0,0-4.791,4.264,16.176,16.176,0,0,0-.947,1.505A16.175,16.175,0,0,0,47.637,55.218Zm0,0"
+                                    transform="translate(-22.523 -22.523)" fill="#003777"></path>
+                                <path class="pic1" id="Path_1710" d="M80,0h4.739V4.739H80Zm0,0"
+                                    transform="translate(-56.307)" fill="#003777"></path>
+                                <path class="pic1" id="Path_1711" d="M80,176h4.739v4.739H80Zm0,0"
+                                    transform="translate(-56.307 -123.876)" fill="#003777"></path>
+                                <path class="pic1" id="Path_1712" d="M160,88h4.739v4.739H160Zm0,0"
+                                    transform="translate(-112.615 -61.938)" fill="#003777"></path>
+                                <path class="pic1" id="Path_1713" d="M0,88H4.739v4.739H0Zm0,0"
+                                    transform="translate(0 -61.938)" fill="#003777"></path>
+                                <path class="pic1" id="Path_1714"
+                                    d="M373.323,347.844a11.9,11.9,0,0,1-2.369-7.105V336h-4.739v4.739a11.846,11.846,0,0,1-11.846,11.846H352v4.739h2.369a11.85,11.85,0,0,1,11.846,11.846v4.739h4.739V369.17A11.846,11.846,0,0,1,382.8,357.323h2.369v-4.739H382.8A11.9,11.9,0,0,1,373.323,347.844Zm-3.791,11.374a15.909,15.909,0,0,0-.947,1.507,14.647,14.647,0,0,0-5.74-5.772,16.537,16.537,0,0,0,4.791-4.264,15.912,15.912,0,0,0,.948-1.507,14.646,14.646,0,0,0,5.74,5.772A16.567,16.567,0,0,0,369.532,359.218Zm0,0"
+                                    transform="translate(-247.752 -236.491)" fill="#003777"></path>
+                                <path class="pic1" id="Path_1715" d="M400,304h4.739v4.739H400Zm0,0"
+                                    transform="translate(-281.537 -213.968)" fill="#003777"></path>
+                                <path class="pic1" id="Path_1716" d="M400,480h4.739v4.739H400Zm0,0"
+                                    transform="translate(-281.537 -337.844)" fill="#003777"></path>
+                                <path class="pic1" id="Path_1717" d="M480,392h4.739v4.739H480Zm0,0"
+                                    transform="translate(-337.844 -275.906)" fill="#003777"></path>
+                                <path class="pic1" id="Path_1718" d="M320,392h4.739v4.739H320Zm0,0"
+                                    transform="translate(-225.229 -275.906)" fill="#003777"></path>
+                                <path class="pic1" id="Path_1719"
+                                    d="M169.391,176H109.847L94.015,202.387l45.6,48.136,45.6-48.136ZM150.6,204.431,139.619,239.21l-10.984-34.779Zm-21.016-4.739,10.031-16.718,10.031,16.718ZM143.8,180.739h20.062l-10.031,16.718Zm-18.4,16.718-10.031-16.718h20.062Zm-4.184,2.236H101.156l10.031-16.718Zm2.448,4.739,10.592,33.547-31.778-33.547Zm31.9,0h21.186l-31.778,33.547Zm2.448-4.739,10.031-16.718,10.031,16.718Zm0,0"
+                                    transform="translate(-66.172 -123.876)" fill="#003777"></path>
+                                <path class="pic2" id="Path_1720" d="M376,112h4.739v4.739H376Zm0,0"
+                                    transform="translate(-264.644 -78.83)" fill="#003777"></path>
+                                <path class="pic2" id="Path_1721" d="M360,128h4.739v4.739H360Zm0,0"
+                                    transform="translate(-253.383 -90.092)" fill="#003777"></path>
+                                <path class="pic2" id="Path_1722" d="M376,144h4.739v4.739H376Zm0,0"
+                                    transform="translate(-264.644 -101.353)" fill="#003777"></path>
+                                <path class="pic2" id="Path_1723" d="M392,128h4.739v4.739H392Zm0,0"
+                                    transform="translate(-275.906 -90.092)" fill="#003777"></path>
+                                <path class="pic2" id="Path_1724" d="M112,368h4.739v4.739H112Zm0,0"
+                                    transform="translate(-78.83 -259.014)" fill="#003777"></path>
+                                <path class="pic2" id="Path_1725" d="M96,384h4.739v4.739H96Zm0,0"
+                                    transform="translate(-67.569 -270.275)" fill="#003777"></path>
+                                <path class="pic2" id="Path_1726" d="M112,400h4.739v4.739H112Zm0,0"
+                                    transform="translate(-78.83 -281.537)" fill="#003777"></path>
+                                <path class="pic2" id="Path_1727" d="M128,384h4.739v4.739H128Zm0,0"
+                                    transform="translate(-90.092 -270.275)" fill="#003777"></path>
+                            </svg>
+                        </div>
+
+                        <div class="value-content w-full text-center">
+                            <h6 data-i18n="about-value"
+                                class="text-green text-[30px] font-bold my-2 group-hover:text-white">GIÁ TRỊ CỐT LÕI
+                            </h6>
+                            <p class="group-hover:text-white">
+                                but i must explain to you how all this mistaken idea of denouncing pleasure and praising
+                                pain was born and i will give you system, and expound.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview-info mt-10 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10">
+
+
+                <div class="intro relative w-full pt-0 lg:pt-10 text-center md:text-left order-first lg:order-last">
+                    <div class="product-intro animation-element relative z-10">
+                        <h2 data-i18n="about-intro-company" class="text-primary text-4xl font-bold mb-4">
+                            Giới thiệu sơ lược về công ty
+                        </h2>
+
+                        <p>
+                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                            pain was born and I will give you a complete account of the system, and expound the actual
+                            teachings of the great explorer of the truth, the master-builder of human happiness. No one
+                            rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who
+                            do not know how to pursue pleasure rationally encounter consequences that are extremely
+                            painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself,
+                            because it is pain, but because occasionally circumstances occur in which toil and pain can
+                            procure exercise, except to obtain some advantage from it? But who has any right know how to
+                            pursue pleasure to find fault.
+                        </p>
+                    </div>
+
+                    <div
+                        class="absolute top-[-50px] left-[50%] translate-x-[-50%] sm:top-[-100px] md:left-[-40px] lg:top-[-60px] md:translate-x-0 lg:left-[-30px]">
+                        <img src="./assets/images/dot.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="px-[10px]">
+                    <div class="intro-grid-1 animation-element grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+                        <div class="item flex flex-col items-center pt-[45px] pb-[55px] shadow-hover-v1 rounded-[25px]">
+                            <img src="./assets/images/clock.svg" alt="" class="w-[105px]">
+
+                            <div id="year-counter"
+                                class="animation-element text-center text-primary text-[42px] font-bold mt-5">
+                                20
+                            </div>
+                            <h6 data-i18n="about-year" class="text-primary">NĂM KINH NGHIỆM</h6>
+                        </div>
+
+                        <div
+                            class="item flex flex-col items-center pt-[45px] pb-[55px] shadow-hover-v1 rounded-[25px] translate-y-[40px]">
+                            <img src="./assets/images/smile.svg" alt="" class="w-[105px]">
+
+                            <div id="customer-counter"
+                                class="animation-element text-center text-primary text-[42px] font-bold mt-5">
+                                5000
+                            </div>
+                            <h6 data-i18n="about-partner" class="text-primary">ĐỐI TÁC</h6>
+                        </div>
+                    </div>
+
+                    <div class="intro-grid-2 animation-element grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 mt-14">
+                        <div class="item flex flex-col items-center pt-[45px] pb-[55px] shadow-hover-v1 rounded-[25px]">
+                            <img src="./assets/images/statistics.svg" alt="" class="w-[105px]">
+
+                            <div id="office-counter"
+                                class="animation-element text-center text-primary text-[42px] font-bold mt-5">
+                                4
+                            </div>
+                            <h6 data-i18n="about-office" class="text-primary">VĂN PHÒNG</h6>
+                        </div>
+
+                        <div
+                            class="item flex flex-col items-center pt-[45px] pb-[55px] shadow-hover-v1 rounded-[25px] translate-y-[40px]">
+                            <img src="./assets/images/teamwork.svg" alt="" class="w-[105px]">
+
+                            <div id="employee-counter"
+                                class="animation-element text-center text-primary text-[42px] font-bold mt-5">
+                                200+
+                            </div>
+                            <h6 data-i18n="about-employee" class="text-primary">NHÂN VIÊN</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="absolute top-[200px] hidden xl:block md:left-[-100px]">
+            <img src="./assets/images/circle-dot.svg" alt="" class="parallax-large-item">
+        </div>
+
+        <div class="absolute top-[400px] hidden xl:block md:right-[-100px]">
+            <img src="./assets/images/primary-circle.svg" alt="" class="parallax-large-item h-[200px] w-[200px]">
+        </div>
+
+
+    </section>
+
+
+    <div class="improvement mt-[175px]">
+        <div class="container text-center relative flex flex-col items-center ">
+            <div class="relative w-fit z-10">
+                <h2 class="particletext confetti animation-element text-primary text-4xl font-bold mb-4">
+                    <span data-i18n="about-development">
+                        Chặng đường
+                        phát triển
+                    </span>
+                </h2>
+            </div>
+
+            <p>
+
+                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+                and I will give you a complete account of the system, and expound the actual teachings of the great
+                explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids
+                pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure
+                rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or
+                pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances
+                occur in which toil and pain can procure exercise, except to obtain some advantage from it? But who has
+                any right know how to pursue pleasure to find fault.
+            </p>
+
+
+            <div class="flex justify-center w-full">
+                <img src="/assets/images/improvement.png" alt="">
+            </div>
+
+
+            <div class="absolute right-[25px] md:right-[15%] top-[-20px] md:top-0">
+                <img src="./assets/images/plus.svg" alt="" class="parallax-right">
+            </div>
+
+            <div class="absolute right-0 md:right-[15%] top-[-100px] z-10">
+                <img src="./assets/images/primary-circle.svg" alt=""
+                    class="parallax-right-large-item w-[80px] md:w-full">
+            </div>
+        </div>
+
+
+    </div>
+
+    <section id="contact" class="relative py-16 lg:py-24 bg-bg_primary">
+
+        <div class="container relative">
+
+            <div class="grid grid-cols-1 md:grid-cols-12 py-6 items-end gap-6 xl:gap-20">
+                <div class="lg:col-span-6 md:col-span-6">
+                    <h2 data-i18n="contact-title" class="text-primary text-3xl font-bold mb-2">
+                    </h2>
+
+                    <p data-i18n="contact-desc" class="text-md mb-4">
+                    </p>
+
+                    <div class="image-blur"></div>
+                </div>
+
+                <div class="lg:col-span-6 md:col-span-6">
+                    <div class="lg:ms-5">
+                        <div class="bg-white rounded-md pb-6 px-8 pt-8 contact-shadow text-right">
+                            <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
+                                <p class="mb-0" id="error-msg"></p>
+                                <div id="simple-msg"></div>
+                                <div class="grid lg:grid-cols-12 grid-cols-1 gap-3 text-left">
+                                    <div class="lg:col-span-12">
+                                        <label data-i18n="name" for="name" class="font-semibold text-primary"></label>
+                                        <input name="name" id="name" type="text"
+                                            class="mt-2 w-full py-2 px-3 h-10 bg-transparent   rounded outline-none border border-borderColor  focus:ring-0">
+                                    </div>
+
+                                    <div class="lg:col-span-12">
+                                        <label data-i18n="tel" for="tel" class="font-semibold text-primary"></label>
+                                        <input name="tel" id="tel" type="tel"
+                                            class="mt-2 w-full py-2 px-3 h-10 bg-transparent  rounded outline-none border border-borderColor  focus:ring-0">
+                                    </div>
+
+                                    <div class="lg:col-span-12">
+                                        <label for="email" class="font-semibold text-primary">Email:</label>
+                                        <input name="email" id="email"
+                                            class="mt-2 w-full py-2 px-3 h-10 bg-transparent  rounded outline-none border border-borderColor  focus:ring-0">
+                                    </div>
+
+                                    <div class="lg:col-span-12">
+                                        <label data-i18n="content" for="comments"
+                                            class="font-semibold text-primary"></label>
+                                        <textarea name="comments" id="comments"
+                                            class="mt-2 w-full py-2 px-3 h-28 bg-transparent  rounded outline-none border border-borderColor  focus:ring-0"></textarea>
+                                    </div>
+                                </div>
+                                <button data-i18n="send-info" type="submit" id="submit" name="send"
+                                    class="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-primary text-white mt-2"></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="absolute bottom-[-100px] left-[-100px]">
+            <img src="./assets/images/circle-dot.svg" alt="" class="simple-parallax-item">
+        </div>
+    </section>
+
+
+    <footer class="footer overflow-hidden pb-12">
+        <div class="container relative pt-5">
+            <div class="footer-inner relative mt-[50px] py-[75px] px-[20px] rounded-[25px] bg-primary text-white">
+                <div class="grid gap-6 grid-cols-1 md:grid-cols-12">
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-3 p-[10px]">
+                        <div class="mb-5 flex items-center">
+                            <img src="./assets/images/logo.png" class="h-12 w-12">
+                            <h3 class="text-2xl font-black ml-3">
+                                Y CHÍNH XÁC
+                            </h3>
+                        </div>
+
+                        <div class="contact">
+
+                            <div class="flex items-center mt-4">
+                                <div class="icon min-w-5">
+                                    <img src="./assets/images/email.svg" alt="" class="w-5 h-5">
+                                </div>
+
+                                <div class="info  ml-2 break-all">
+                                    <span class="text-[#96aac1]">support@validtemplates.com</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center mt-2">
+                                <div class="icon min-w-5">
+                                    <img src="./assets/images/phone.svg" alt="" class="w-5 h-5">
+                                </div>
+
+
+                                <div class="info ml-2">
+
+                                    <span class="text-[#96aac1]">0909800576 - 0901800576</span>
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- <div class="flex items-center mt-2">
+                                <div class="icon min-w-5">
+                                    <img src="./assets/images/fax.svg" alt="" class="w-5 h-5">
+                                </div>
+
+                                <div class="info  ml-2">
+
+                                    <span class="text-[#96aac1]">123456789</span>
+                                </div>
+
+
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="group col-span-12 sm:col-span-6 lg:col-span-3 p-[10px] sm:mt-10 lg:mt-0">
+                        <p data-i18n="nav-product" class="font-semibold text-lg">Sản phẩm</p>
+                        <ul class="mt-3">
+                            <li onclick="location.href='/EMR'" class="footer-item pb-3 cursor-pointer">Web EMR</li>
+                            <li onclick="location.href='/EHR'" class="footer-item pb-3 cursor-pointer">App EHR</li>
+                            <li onclick="location.href='/telemedicine'" class="footer-item cursor-pointer">Tele
+                                Medicine</li>
+                        </ul>
+                    </div>
+
+                    <div class="group col-span-12 sm:col-span-6  lg:col-span-3 p-[10px]">
+                        <p data-i18n="footer-partner" class="font-semibold text-lg">Đối tác</p>
+                        <ul class="mt-3">
+                            <li data-i18n="footer-hospital" class="footer-item pb-3">Đơn vị Bệnh viện</li>
+                            <li data-i18n="footer-large-clinic" class="footer-item pb-3">Phòng khám lớn</li>
+                            <li data-i18n="footer-small-clinic" class="footer-item">Phòng khám nhỏ</li>
+                        </ul>
+                    </div>
+
+                    <div class="group col-span-12 sm:col-span-6  lg:col-span-3 p-[10px]">
+                        <p data-i18n="nav-service" class="font-semibold text-lg">Dịch vụ</p>
+                        <ul class="mt-3">
+                            <li data-i18n="footer-management" class="footer-item pb-3">Phần mềm quản lý bệnh viện</li>
+                            <li data-i18n="footer-his" class="footer-item pb-3">Kết nối hệ thống HIS</li>
+                            <li data-i18n="footer-national" class="footer-item">Liên thông cổng quốc gia</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="absolute top-[-10px] left-[66px] lg:lef">
+                    <img src="./assets/images/circle.svg" alt="" class="w-[30px] h-[30px] parallax-left">
+                </div>
+
+                <div class="absolute bottom-[-50px] right-0 sm:right-[40%]">
+                    <img src="./assets/images/circle.svg" alt="" class="w-[90px] h-[91px] parallax-right">
+                </div>
+
+                <div class="absolute top-0 right-[20px]">
+                    <img src="./assets/images/plus.svg" alt="" class="parallax-item">
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="copyright container p-[10px] pt-0">
+        <p class="my-2 font-light text-[16px]">
+            © 2024 EMR . All rights reserved.
+        </p>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="/packages/simpleParallax/dist/simpleParallax.min.js"></script>
+    <script src="/packages/swiper/package/swiper-bundle.min.js"></script>
+    <script src="/js/animate.js"></script>
+    <script src="/js/lang.js"></script>
+</body>
+
+</html>

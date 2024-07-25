@@ -1,5 +1,6 @@
 body {
     font-family: 'Nunito';
+    overflow-x: hidden;
 }
 
 .container {
@@ -13,28 +14,64 @@ body {
 .swiper-button-next, .swiper-button-prev {
     color: #003777
 }
+
 @layer utilities {
+    
     .animation-fill-both {
         animation-fill-mode: both;
     }
-    .animation-delay-75 {
-        animation-delay: 75ms;
+
+    .animationFadeInRightDuration500.animation-element.animated {
+        @apply animate-[fadeInRight_0.5s_ease-in-out] animation-fill-both
     }
 
-    .animation-duration-75 {
-        animation-duration: 75ms;
+    .animationFadeInRightDuration1000.animation-element.animated {
+        @apply animate-[fadeInRight_1s_ease-in-out] animation-fill-both
     }
 
-    .animation-duration-300 {
-        animation-duration: 300ms;
+    .animationFadeInRightDuration1500.animation-element.animated {
+        @apply animate-[fadeInRight_1.5s_ease-in-out] animation-fill-both
     }
 
-    .animation-duration-500 {
-        animation-duration: 500ms;
+
+    .animationFadeInUp_Duration1000.animation-element.animated {
+        @apply animate-[fadeInUp_1s_ease-in-out] animation-fill-both
     }
 
-    .animation-duration-1000 {
-        animation-duration: 1s;
+    .animationFadeInUp_Duration1000_Delay_500.animation-element.animated {
+        @apply animate-[fadeInUp_1s_ease-in-out] animation-fill-both [animation-delay:500ms]
+    }
+
+    .animationFadeInUp.animation-element.animated {
+        @apply animate-[fadeInUp_500ms_ease-in-out] animation-fill-both md:[animation-delay:200ms]
+    }
+
+    .animationFadeInRightDelay500.animation-element.animated {
+        @apply animate-[fadeInRight_1.5s_ease-in-out] animation-fill-both  md:[animation-delay:500ms]
+    }
+
+    .animationFadeInRightDelay1000.animation-element.animated {
+        @apply animate-[fadeInRight_1.5s_ease-in-out] animation-fill-both  md:[animation-delay:1000ms]
+    }
+
+    .animationFadeInRightDelay1500.animation-element.animated {
+        @apply animate-[fadeInRight_1.5s_ease-in-out] animation-fill-both  md:[animation-delay:1500ms]
+    }
+
+    .animationFadeInRight_Duration1000_Delay500.animation-element.animated {
+        @apply animate-[fadeInRight_1s_ease-in-out] animation-fill-both  md:[animation-delay:500ms]
+    }
+
+    .animationFadeInRight_Duration1000_Delay750.animation-element.animated {
+        @apply animate-[fadeInRight_1s_ease-in-out] animation-fill-both  md:[animation-delay:750ms]
+    }
+
+    .animationFadeInRight_Duration1000_Delay1000.animation-element.animated {
+        @apply animate-[fadeInRight_1s_ease-in-out] animation-fill-both  md:[animation-delay:1000ms]
+    }
+
+    .animationFadeInRight_Duration500_Delay_1500.animation-element.animated {
+        @apply animate-[fadeInRight_0.5s_ease-in-out] animation-fill-both [animation-delay:1500ms]
     }
 }
 

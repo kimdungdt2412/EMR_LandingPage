@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cùng y chính xác chuyển đổi số phòng khám" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link href="/packages/swiper/package/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="./assets/css/output.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <title>Liên hệ</title>
+</head>
+
+<body>
+    <header
+        class="header fixed transition-colors top-0 z-50 w-screen py-2 lg:py-1 bg-white drop-shadow-md lg:drop-shadow-none">
+        <nav class=" container mx-auto py-0 lg:py-2.5 dark:bg-gray-800">
+            <div class="flex flex-wrap justify-between items-center mx-auto">
+                <a href="/" class="flex items-center">
+                    <img src="./assets/images/logo.png" class="mr-3 h-9 lg:h-10" alt="EMR Logo" />
+                    <span class="self-center text-lg lg:text-xl text-primary font-semibold whitespace-nowrap">Y chính
+                        xác</span>
+                </a>
+
+
+
+                <div class="right-nav flex">
+
+
+                    <div class="hidden justify-between items-center w-full lg:flex lg:w-auto">
+                        <ul id="list"
+                            class="flex flex-col mt-2 font-medium lg:flex-row lg:space-x-8 lg:mt-0 lg:items-center">
+
+                            <li>
+                                <button id="dropdownProductButton" class="nav-item flex justify-between items-center"
+                                    data-dropdown-toggle="product-dropdown" data-dropdown-placement="bottom-end"
+                                    data-dropdown-trigger="click">
+                                    <span data-i18n="nav-product"></span>
+                                    <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg>
+                                </button>
+                            </li>
+
+                            <li>
+                                <a href="/services" data-i18n="nav-service" class="nav-item">Dịch vụ</a>
+                            </li>
+
+                            <li>
+                                <a href="/about" data-i18n="nav-about-us" class="nav-item">Về chúng tôi</a>
+                            </li>
+
+                            <li>
+                                <a href="/contact" data-i18n="nav-contact" class="nav-item">Liên hệ</a>
+                            </li>
+
+                            <!-- <li>
+                                <a href="#" class="nav-item">Demo</a>
+                            </li> -->
+                        </ul>
+
+                        <div id="product-dropdown"
+                            class="z-10 hidden animate-mmfadeIn rounded-lg w-[200px] bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            <ul class="py-2 text-darkBlue" aria-labelledby="dropdownProductButton">
+                                <li>
+                                    <a href="/EMR"
+                                        class="block px-4 py-2 transition-all hover:text-primary hover:font-semibold">EMR</a>
+                                </li>
+                                <li>
+                                    <a href="/EHR"
+                                        class="block px-4 py-2 transition-all hover:text-primary hover:font-semibold">App
+                                        EHR</a>
+                                </li>
+                                <li>
+                                    <a href="/telemedicine"
+                                        class="block px-4 py-2 transition-all hover:text-primary hover:font-semibold">Tele
+                                        Medicine</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <button id="dropdownLangButton" class="mr-2 lg:mr-0 lg:ml-8" data-dropdown-toggle="lang-dropdown"
+                        data-dropdown-placement="bottom-end" data-dropdown-trigger="click">
+
+                        <img id="lang-icon" class="w-8 h-8 rounded-full translate-y-[-1px]"
+                            src="./assets/images/vi.png">
+                    </button>
+
+                    <div class="flex items-center lg:hidden lg:order-2">
+                        <button id="nav-button" type="button"
+                            class="inline-flex items-center p-1 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div id="lang-dropdown"
+                        class="z-10 hidden animate-mmfadeIn rounded-lg w-[200px] bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                        <ul class="py-2 text-darkBlue" aria-labelledby="dropdownLangButton">
+                            <li>
+                                <a href="/" onclick="changeLanguage('vi')"
+                                    class="px-4 py-2 transition-all flex items-center hover:text-primary hover:font-semibold">
+                                    <img src="/assets/images/vietnam.png" class="w-8 inline-block mr-2">
+                                    <span data-i18n="vi"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/" onclick="changeLanguage('en')"
+                                    class="px-4 py-2 transition-all flex items-center hover:text-primary hover:font-semibold">
+                                    <img src="/assets/images/england.png" class="w-8 inline-block mr-2">
+                                    <span data-i18n="en"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="mobile-menu w-full lg:hidden" id="mobile-menu">
+                    <ul id="mobile-menu-list" class="flex flex-col mt-2 font-medium">
+
+                        <li>
+                            <div id="accordion-collapse" data-accordion="collapse">
+                                <button class="nav-item flex items-center w-full bg-white"
+                                    data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                                    aria-controls="accordion-collapse-body-1" id="accordion-collapse-heading-1">
+
+                                    <span data-i18n="nav-product"></span>
+                                    <svg class="h-5 w-5 flex-none ml-2" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+
+                                </button>
+
+                                <div id="accordion-collapse-body-1" class="hidden"
+                                    aria-labelledby="accordion-collapse-heading-1">
+
+                                    <a href="/EMR"
+                                        class="block py-2 pl-6 pr-3 text-[15px] font-semibold leading-7 text-gray-900 hover:text-primary">EMR</a>
+                                    <a href="/EHR"
+                                        class="block py-2 pl-6 pr-3 text-[15px] font-semibold leading-7 text-gray-900 hover:text-primary">App
+                                        EHR</a>
+                                    <a href="/telemedicine"
+                                        class="block py-2 pl-6 pr-3 text-[15px] font-semibold leading-7 text-gray-900 hover:text-primary">Tele
+                                        Medicine</a>
+
+                                </div>
+                            </div>
+
+
+                        </li>
+
+                        <li>
+                            <a href="/services" data-i18n="nav-service" class="nav-item">Dịch vụ</a>
+                        </li>
+
+                        <li>
+                            <a href="/about" data-i18n="nav-about-us" class="nav-item">Về chúng tôi</a>
+                        </li>
+
+                        <li>
+                            <a href="/contact" data-i18n="nav-contact" class="nav-item">Liên hệ</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#" class="nav-item">Demo</a>
+                        </li> -->
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="contact-header mt-[160px] mb-[28px]">
+        <div class="container mx-auto relative">
+            <div class="title relative z-10 text-primary text-center md:text-left">
+                <h2 data-i18n="contact-main-title"
+                    class="banner-intro animation-element text-[36px] md:text-[40px] font-bold">LIÊN HỆ CHÚNG TÔI</h2>
+            </div>
+
+            <div class="absolute right-[-100px] top-[-50px] md:right-[-50px] hidden sm:block">
+                <img src="./assets/images/circle.svg" alt="" class="simple-parallax-item w-[150px] h-[150px]">
+            </div>
+
+            <div class="absolute top-10 right-[20px] md:right-[75px] hidden sm:block">
+                <img src="./assets/images/primary-plus.svg" alt="" class="simple-parallax-item">
+            </div>
+
+            <div class="absolute top-[-20px] left-1/2 translate-x-[-50%] md:right-[75px] block sm:hidden">
+                <img src="./assets/images/dot.svg" alt="" class="simple-parallax-item">
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="my-20 sm:my-10">
+        
+        <div class="container grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div
+                class="animationFadeInRight_Duration1000_Delay500 animation-element address py-[45px] pl-8 pr-10 rounded-[25px] shadow-contact-hover flex items-center justify-center sm:justify-start gap-5 flex-col lg:flex-row lg:justify-start">
+                <div class="location-icon w-full lg:w-1/3 flex justify-center">
+                    <img src="/assets/images/location.svg" alt="">
+                </div>
+
+                <div class="location-content text-center lg:text-left w-full lg:w-2/3">
+                    <h4 data-i18n="address" class="text-green font-bold text-xl mb-4">
+                        ĐỊA CHỈ
+                    </h4>
+                    <p data-i18n="address-content">33 đường số 18, phường Tân Hưng, Quận 7, TP Hồ Chí Minh</p>
+                </div>
+            </div>
+
+            <div
+                class="animationFadeInRight_Duration1000_Delay750 animation-element phone w-full py-[45px] pl-8 pr-10 rounded-[25px] shadow-contact-hover flex items-center justify-center sm:justify-start gap-5 flex-col lg:flex-row lg:justify-start">
+                <div class="phone-icon w-full lg:w-1/3 flex justify-center">
+                    <img src="/assets/images/Group-657.svg" alt="">
+                </div>
+
+                <div class="location-content text-center lg:text-left w-full lg:w-2/3">
+                    <h4 data-i18n="phone" class="text-green font-bold text-xl mb-4">
+                        ĐIỆN THOẠI
+                    </h4>
+                    <p>
+                        0909800576
+                        <br/>
+                        0901800576
+                    </p>
+                </div>
+            </div>
+
+
+            <div
+                class="animationFadeInRight_Duration1000_Delay1000 animation-element work py-[45px] pl-8 pr-10 rounded-[25px] shadow-contact-hover flex items-center justify-center sm:justify-start gap-5 flex-col lg:flex-row lg:justify-start">
+                <div class="location-icon w-full lg:w-1/3 flex justify-center">
+                    <img src="/assets/images/clock-2.svg" alt="">
+                </div>
+
+                <div class="location-content text-center lg:text-left w-full lg:w-2/3">
+                    <h4 data-i18n="working-day" class="text-green font-bold text-xl mb-4">
+                        THỜI GIAN LÀM VIỆC
+                    </h4>
+                    <p data-i18n="working-day-content">Thứ 2 - Thứ 7</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="relative mt-10">
+
+        <div class="container relative animationFadeInRight_Duration500_Delay_1500 animation-element">
+
+            <div class="grid grid-cols-1 md:grid-cols-12 py-6 items-end gap-6 xl:gap-20">
+                <div class="lg:col-span-6 md:col-span-6">
+                    <h2 data-i18n="contact-title" class="text-primary text-2xl font-bold mb-2">
+                    </h2>
+
+                    <p data-i18n="contact-desc" class="text-md mb-4">
+                    </p>
+
+                    <div class="image-blur"></div>
+                </div>
+
+                <div class="lg:col-span-6 md:col-span-6">
+                    <div class="lg:ms-5">
+                        <div class="bg-white rounded-md pb-6 px-8 pt-8 contact-shadow text-right">
+                            <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
+                                <p class="mb-0" id="error-msg"></p>
+                                <div id="simple-msg"></div>
+                                <div class="grid lg:grid-cols-12 grid-cols-1 gap-3 text-left">
+                                    <div class="lg:col-span-12">
+                                        <label data-i18n="name" for="name" class="font-semibold text-primary"></label>
+                                        <input name="name" id="name" type="text"
+                                            class="mt-2 w-full py-2 px-3 h-10 bg-transparent   rounded outline-none border border-borderColor  focus:ring-0">
+                                    </div>
+
+                                    <div class="lg:col-span-12">
+                                        <label data-i18n="tel" for="tel" class="font-semibold text-primary"></label>
+                                        <input name="tel" id="tel" type="tel"
+                                            class="mt-2 w-full py-2 px-3 h-10 bg-transparent  rounded outline-none border border-borderColor  focus:ring-0">
+                                    </div>
+
+                                    <div class="lg:col-span-12">
+                                        <label for="email" class="font-semibold text-primary">Email:</label>
+                                        <input name="email" id="email"
+                                            class="mt-2 w-full py-2 px-3 h-10 bg-transparent  rounded outline-none border border-borderColor  focus:ring-0">
+                                    </div>
+
+                                    <div class="lg:col-span-12">
+                                        <label data-i18n="content" for="comments"
+                                            class="font-semibold text-primary"></label>
+                                        <textarea name="comments" id="comments"
+                                            class="mt-2 w-full py-2 px-3 h-28 bg-transparent  rounded outline-none border border-borderColor  focus:ring-0"></textarea>
+                                    </div>
+                                </div>
+                                <button data-i18n="send-info" type="submit" id="submit" name="send"
+                                    class="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-primary text-white mt-2"></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="absolute bottom-[-100px] left-[-100px]">
+            <img src="./assets/images/circle-dot.svg" alt="" class="simple-parallax-item">
+        </div>
+    </section>
+
+
+    <footer class="footer overflow-hidden pb-12">
+        <div class="container relative pt-5">
+            <div class="footer-inner relative mt-[50px] py-[75px] px-[20px] rounded-[25px] bg-primary text-white">
+                <div class="grid gap-6 grid-cols-1 md:grid-cols-12">
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-3 p-[10px]">
+                        <div class="mb-5 flex items-center">
+                            <img src="./assets/images/logo.png" class="h-12 w-12">
+                            <h3 class="text-2xl font-black ml-3">
+                                Y CHÍNH XÁC
+                            </h3>
+                        </div>
+
+                        <div class="contact">
+
+                            <div class="flex items-center mt-4">
+                                <div class="icon min-w-5">
+                                    <img src="./assets/images/email.svg" alt="" class="w-5 h-5">
+                                </div>
+
+                                <div class="info  ml-2 break-all">
+                                    <span class="text-[#96aac1]">support@validtemplates.com</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center mt-2">
+                                <div class="icon min-w-5">
+                                    <img src="./assets/images/phone.svg" alt="" class="w-5 h-5">
+                                </div>
+
+
+                                <div class="info ml-2">
+
+                                    <span class="text-[#96aac1]">0909800576 - 0901800576</span>
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- <div class="flex items-center mt-2">
+                                <div class="icon min-w-5">
+                                    <img src="./assets/images/fax.svg" alt="" class="w-5 h-5">
+                                </div>
+
+                                <div class="info  ml-2">
+
+                                    <span class="text-[#96aac1]">123456789</span>
+                                </div>
+
+
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="group col-span-12 sm:col-span-6 lg:col-span-3 p-[10px] sm:mt-10 lg:mt-0">
+                        <p data-i18n="nav-product" class="font-semibold text-lg">Sản phẩm</p>
+                        <ul class="mt-3">
+                            <li onclick="location.href='/EMR'" class="footer-item pb-3 cursor-pointer">Web EMR</li>
+                            <li onclick="location.href='/EHR'" class="footer-item pb-3 cursor-pointer">App EHR</li>
+                            <li onclick="location.href='/telemedicine'" class="footer-item cursor-pointer">Tele
+                                Medicine</li>
+                        </ul>
+                    </div>
+
+                    <div class="group col-span-12 sm:col-span-6  lg:col-span-3 p-[10px]">
+                        <p data-i18n="footer-partner" class="font-semibold text-lg">Đối tác</p>
+                        <ul class="mt-3">
+                            <li data-i18n="footer-hospital" class="footer-item pb-3">Đơn vị Bệnh viện</li>
+                            <li data-i18n="footer-large-clinic" class="footer-item pb-3">Phòng khám lớn</li>
+                            <li data-i18n="footer-small-clinic" class="footer-item">Phòng khám nhỏ</li>
+                        </ul>
+                    </div>
+
+                    <div class="group col-span-12 sm:col-span-6  lg:col-span-3 p-[10px]">
+                        <p data-i18n="nav-service" class="font-semibold text-lg">Dịch vụ</p>
+                        <ul class="mt-3">
+                            <li data-i18n="footer-management" class="footer-item pb-3">Phần mềm quản lý bệnh viện</li>
+                            <li data-i18n="footer-his" class="footer-item pb-3">Kết nối hệ thống HIS</li>
+                            <li data-i18n="footer-national" class="footer-item">Liên thông cổng quốc gia</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="absolute top-[-10px] left-[66px] lg:lef">
+                    <img src="./assets/images/circle.svg" alt="" class="w-[30px] h-[30px] parallax-left">
+                </div>
+
+                <div class="absolute bottom-[-50px] right-0 sm:right-[40%]">
+                    <img src="./assets/images/circle.svg" alt="" class="w-[90px] h-[91px] parallax-right">
+                </div>
+
+                <div class="absolute top-0 right-[20px]">
+                    <img src="./assets/images/plus.svg" alt="" class="parallax-item">
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="copyright container p-[10px] pt-0">
+        <p class="my-2 font-light text-[16px]">
+            © 2024 EMR . All rights reserved.
+        </p>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="/packages/simpleParallax/dist/simpleParallax.min.js"></script>
+    <script src="/packages/swiper/package/swiper-bundle.min.js"></script>
+    <script src="/js/animate.js"></script>
+    <script src="/js/lang.js"></script>
+</body>
+
+</html>

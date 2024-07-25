@@ -1,9 +1,9 @@
 .banner-intro.animation-element.animated {
-    @apply animate-mmslideIn animation-fill-both [animattion-duration:500ms] md:[animation-delay:500ms]
+    @apply animate-[slideIn_500ms_ease-in-out] animation-fill-both md:[animation-delay:500ms]
 }
 
 .banner-intro-image.animation-element.animated {
-    @apply animate-mmslideIn animation-fill-both [animattion-duration:1000ms] md:[animation-delay:700ms]
+    @apply animate-[slideIn_500ms_ease-in-out] animation-fill-both md:[animation-delay:700ms]
 }
 
 .svg-intro.animation-element.animated {
@@ -23,19 +23,19 @@
 }
 
 .read-more {
-    @apply py-[18px] px-[47px] bg-button-pattern mb-3 rounded-[100em] transition-shadow hover:shadow-[0px_8px_20px_0px_rgba(3_213_159_.36)]
+    @apply py-[18px] px-[47px] bg-button-pattern mb-3 rounded-[100em] transition-shadow hover:shadow-button-hover
 }
 
 .product-image.animation-element.animated {
-    @apply animate-maskFromToTop animation-fill-both
+    @apply animate-mmMaskFromToTop animation-fill-both
 }
 
 .feedback-header.animation-element.animated ,.product-intro.animation-element.animated {
-    @apply animate-mmFadeInUp animation-fill-both [animation-duration:800ms]
+    @apply animate-[fadeInUp_800ms_ease-in-out] animation-fill-both
 }
 
 .read-more.animation-element.animated {
-    @apply animate-mmFadeInUp animation-fill-both [animation-duration:800ms] [animation-delay:200ms]
+    @apply animate-[fadeInUp_800ms_ease-in-out] animation-fill-both [animation-delay:200ms]
 }
 
 .blog-header.animation-element.animated {
@@ -49,7 +49,6 @@
 .swiper-wrapper {
     width: 100%;
     height: max-content !important;
-    padding-bottom: 64px !important;
     -webkit-transition-timing-function: linear !important;
     transition-timing-function: linear !important;
     position: relative;
@@ -73,6 +72,8 @@
     border-radius: 25px;
     height: 400px;
     background-repeat: inherit;
+    background-size: cover;
+    background-position: center;
 }
 
 .contact-shadow {

@@ -1,0 +1,57 @@
+.particletext.confetti.animation-element.animated > .particle {
+    opacity: 0;
+    position: absolute;
+    animation: confetti 3s ease-in;
+}
+.particletext.confetti > .particle.c1 {
+    background-color: rgba(76, 175, 80, 0.5);
+}
+.particletext.confetti > .particle.c2 {
+    background-color: rgba(156, 39, 176, 0.5);
+}
+
+@layer components {
+    .about-title.animation-element.animated {
+        @apply animate-[fadeInUp_1000ms_ease-in-out]
+    }
+
+    .about-icon.animation-element.animated {
+        @apply animate-[fadeInRight_1000ms_ease-in-out] [animation-delay:500ms] animation-fill-both
+    }
+
+    .vission-svg .pic1, .mission-svg .pic1, .value-svg .pic1 {
+        @apply group-hover:fill-green transition-none duration-0
+    }
+
+    .vission-svg .pic2, .mission-svg .pic2, .value-svg .pic2 {
+        @apply group-hover:fill-blue transition-none duration-0
+    }
+
+    .intro-grid-1.animation-element.animated {
+        @apply animate-mmFadeInBottomRight
+    }
+
+    .intro-grid-2.animation-element.animated {
+        @apply animate-mmFadeInBottomRight lg:[animation-delay:300ms] animation-fill-both
+    }
+}
+
+@keyframes confetti {
+    0% {
+        opacity: 0;
+        transform: translateY(0%) rotate(0deg);
+   }
+    10% {
+        opacity: 1;
+   }
+    35% {
+        transform: translateY(-800%) rotate(270deg);
+   }
+    80% {
+        opacity: 1;
+   }
+    100% {
+        opacity: 0;
+        transform: translateY(2000%) rotate(1440deg);
+   }
+}
