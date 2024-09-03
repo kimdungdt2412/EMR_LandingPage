@@ -7,6 +7,7 @@ $(function() {
     var $animationElements = $('.animation-element');
     var $headerElements = $('.header')
     var $window = $(window);
+    
 
     var isLg = window.matchMedia("only screen and (min-width: 1024px)");
 
